@@ -1,0 +1,26 @@
+{
+  "name": "cep_search_and_validation_webapi",
+  "version": "1.0.0",
+  "description": "WebApi responsável por integrar com a api do Via Cep e validar/consultar cep para obter endereços.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labarruffe/cep_search_and_validation_webapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/labarruffe/cep_search_and_validation_webapi/issues"
+  },
+  "homepage": "https://github.com/labarruffe/cep_search_and_validation_webapi#readme",
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  }
+}
