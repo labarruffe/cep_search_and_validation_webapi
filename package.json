@@ -4,7 +4,12 @@
   "description": "WebApi responsável por integrar com a api do Via Cep e validar/consultar cep para obter endereços.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts",
+    "dev": "npm run build:live",
+    "start": "node ./index.js",
+    "prod": "npm run build && npm start"
   },
   "repository": {
     "type": "git",
