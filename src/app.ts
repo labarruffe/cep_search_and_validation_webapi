@@ -6,7 +6,6 @@ const app = express();
 
 const setupApp = async (viacepWebservice = new Viacep()) => {
     app.use('/documentation', express.static(process.cwd() + '/public'));
-    console.log(process.cwd() + '/public');
     app.use(express.json());
     app.use('/', routeSetup(viacepWebservice));
 
