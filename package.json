@@ -12,6 +12,9 @@
     "prod": "npm run build && npm start",
     "doc": "apidoc -f '.*\\.ts$' -i src/controllers -o public/"
   },
+  "engines": {
+    "node": ">=v14.17.4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/labarruffe/cep_search_and_validation_webapi.git"
