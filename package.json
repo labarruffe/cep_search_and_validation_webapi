@@ -9,7 +9,8 @@
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts",
     "dev": "npm run build:live",
     "start": "node ./index.js",
-    "prod": "npm run build && npm start"
+    "prod": "npm run build && npm start",
+    "doc": "apidoc -i src/controllers -o public/"
   },
   "repository": {
     "type": "git",
