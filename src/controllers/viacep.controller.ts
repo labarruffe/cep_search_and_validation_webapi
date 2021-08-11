@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-class Viacep {
+export class Viacep {
     request: any;
     constructor(request = axios) {
         this.request = request;
@@ -10,11 +10,12 @@ class Viacep {
         let response;
         try {
             //TODO: add viacep url in .env
-            const { data } = await this.request.get(`viacep.com.br/ws/${cep}/json/`);
+            const { data } = await this.request.get(`https://viacep.com.br/ws/${cep}/json/`);
             if (data.erro) {
                 response = { message: `O CEP ${cep} não possui endereço vinculado.` }
+            } else {
+                response = data;
             }
-            response = { address: data };
         } catch (error) {
             const { status } = error.response;
             if (status == 400) {
@@ -26,5 +27,3 @@ class Viacep {
         return response;
     }
 }
-
-module.exports = Viacep;
