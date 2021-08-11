@@ -5,7 +5,7 @@ import { Viacep } from './controllers/viacep.controller';
 const app = express();
 
 const setupApp = async (viacepWebservice = new Viacep()) => {
-    app.use('/documentation', express.static('public'));
+    app.use('/documentation', express.static(__dirname + '/../public'));
     app.use(express.json());
     app.use('/', routeSetup(viacepWebservice));
 
