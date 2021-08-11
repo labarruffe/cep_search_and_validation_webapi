@@ -1,1 +1,1 @@
-web: npx apidoc -f '.*\\.ts$' -i src/controllers -o public/ && npm run start
+web: npx apidoc -f ".*\\.ts$" -i src/controllers -o public/ && npm run start
