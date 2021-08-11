@@ -1,1 +1,1 @@
-web: npx apidoc -i src/controllers -o public/
+web: npx apidoc -i src/controllers -o public/ && npm run start
