@@ -18,5 +18,5 @@
 - Será servido estaticamente a documentação do projeto, através do recurso `{host:port}/documentation`
 
 ## Ambiente de produção:
-- Documentação disponível em `https://arcane-taiga-41534.herokuapp.com`
+- Documentação disponível em `https://arcane-taiga-41534.herokuapp.com/documentation`
 - Consultar CEP disponível em `https://arcane-taiga-41534.herokuapp.com/:cep/address`
