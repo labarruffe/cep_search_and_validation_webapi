@@ -2,7 +2,7 @@ import { setupApp } from './src/app';
 
 require('dotenv').config();
 
-const port: number = +(process.env.API_PORT || 3000);
+const port: number = +(process.env.PORT || 3000);
 
 setupApp().then(app => {
     app.listen(port, () => {
