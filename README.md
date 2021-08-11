@@ -1,4 +1,4 @@
-# Criação de WebApi
+# Validação e consulta de CEP integrado ao Via Cep api
 ## Requisitos:
 - Pesquisar um endereço na api livre ViaCep (https://viacep.com.br) para um determinado cep, retornando todas as informações do respectivo cep.
 - Cep somente números.
