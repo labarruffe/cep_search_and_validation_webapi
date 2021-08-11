@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts",
-    "dev": "npm run doc && npm run build:live",
-    "start": "npm run doc && node ./index.js",
-    "prod": "npm run doc && npm run build && npm start",
+    "dev": "npm run build:live",
+    "start": "ts-node ./index.ts",
+    "prod": "npm run build && npm start",
     "doc": "apidoc -i src/controllers -o public/"
   },
   "repository": {
@@ -29,13 +29,13 @@
     "@types/node": "^16.4.13",
     "apidoc": "^0.29.0",
     "nodemon": "^2.0.12",
-    "ts-node": "^10.2.0",
     "typescript": "^4.3.5"
   },
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "ts-node": "^10.2.0"
   }
 }
