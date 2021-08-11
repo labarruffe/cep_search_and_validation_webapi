@@ -3,6 +3,6 @@
     "version": "1.0.0",
     "description": "Documentação da API Rest cep_search_and_validation_webapi.",
     "title": "Documentação WebApi CEP Search and Validation",
-    "url": "https://arcane-taiga-41534.herokuapp.com/",
+    "url": "https://arcane-taiga-41534.herokuapp.com",
     "sampleUrl": null
   }
