@@ -10,3 +10,13 @@
 - Disponibilize o código em um repositório GIT público (GitHub, Gitlab, AzureDevops, etc...)
 - Tome seu tempo, utilize seu conhecimento, fique a vontade, e aprenda algo novo.
 - Utilize nodejs.
+
+## Executar localmente:
+- Criar o arquivo `.env` com base no arquivo `.env.sample`
+- Instalar as dependências do projeto `npm install`
+- Executar a aplicação `npm run dev`
+- Será servido estaticamente a documentação do projeto, através do recurso `{host:port}/documentation`
+
+## Ambiente de produção:
+- Documentação disponível em `https://arcane-taiga-41534.herokuapp.com`
+- Consultar CEP disponível em `https://arcane-taiga-41534.herokuapp.com/:cep/address`
