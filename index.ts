@@ -1,7 +1,8 @@
 import { setupApp } from './src/app';
 
-// TODO: set port on .env
-const port = 3000;
+require('dotenv').config();
+
+const port: number = +(process.env.API_PORT || 3000);
 
 setupApp().then(app => {
     app.listen(port, () => {

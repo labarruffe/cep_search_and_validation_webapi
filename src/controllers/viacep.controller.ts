@@ -57,8 +57,7 @@ export class Viacep {
                 response = invalidFormat;
                 status = 400;
             } else {
-                //TODO: add viacep url in .env
-                const { data, status: resStatus } = await this.request.get(`https://viacep.com.br/ws/${cep}/json/`);
+                const { data, status: resStatus } = await this.request.get(`${process.env.VIACEP_URL}/${cep}/json/`);
                 status = resStatus;
                 if (data.erro) {
                     response = { message: `O CEP ${cep} não possui endereço vinculado.` }
